@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.square{
+  border: 5px solid green;
+ 
+  display: block;
+   align-self: center;
+
+    text-align: center;
+
+    width: 40vw;
+
+    height: 20vw;
+}
+
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 80px;
+   background-color: grey;
+   color: white;
+   text-align: center;
+   }
+   .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 15px;
+  height: 15px;
+  text-align: right;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.6;
+}
+   .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: pink;
+  color: white;
+}
+.fa-github{
+  background:black;
+  color:white;
+}
+.text-foot{
+  text-align: left;
+}
+.split{
+  width: 50%;
+  position: fixed;
+  overflow-x: hidden;
+  height: 100%;
+
+}
+.left{
+  left:0;
+
+}
+.right{
+  right: 0;
+}
+
+
+
+</style>
+</head>
+<body>
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">TECHnophile Anshika</a>
+  <div id="myLinks">
+    <a href="About.html">About Me</a>
+    <a href="#contact">
+      <select name="contact">
+        <option value="Facebook">Facebook</option>
+         <option value="GitHUB">GitHub</option>
+          <option value="Linkdin">Linkdin</option>
+      </select> 
+
+    Get in touch</a>
+    <a href="#about">Mail Me</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+     </script>
+
+    <div class="footer">
+
+      <div class="split left">
+      <p style="color: black"><b>Have a project to discuss??<br> Mail me..!!</b></p>
+    </div>
+    <div class = "split right">
+    
+      <a href="https://www.facebook.com/anshika.bhatnagar.796/" class="fa fa-facebook"> </a>
+      <a href="https://www.linkedin.com/in/anshikabhatnagar/" class="fa fa-linkedin"> </a>
+      <a href="https://www.instagram.com/anshika_rekha_bhatnagar/" class="fa fa-instagram"></a>
+      <a href="https://github.com/bhatnagaranshika02" class="fa fa-github">   </a>
+  </div>
+</div>
+<br><br><br>
+<body background="2.png">
+  <center>
+  <div class="square">
+    <div class="content">
+      <p style="font-size: 30px;"><marquee>Bonjour..!!</marquee></p>
+      <p> I am Anshika, a full-stack python developer and a data science enthusiastic</p>
+      <p> I am also a flutter developer. </p>
+      <p> Have a project to discuss?? <a href="#home">get in touch</a>
+        <br>
+        <br>
+        
+    </div>
+   <a href="https://drive.google.com/file/d/1wUxiG6cwg9gMk9_CJ3phTiFixANS7mrE/view?usp=sharing"> <button type="button" class="btn btn-success">Download Resume</button></a>
+  </div>
+  <br><br><br>
+  <div>
+    <div>
+     <a href="about.html"> <button type="button" class="btn btn-outline-dark">About Me</button></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+     <a href="projects.html"> <button type="button" class="btn btn-outline-dark">Projects</button></a>&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
+    <a href="Blogs">  <button type="button" class="btn btn-outline-dark">Blogs</button></a>
+
+    </div>
+  </div>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+   </body>
+
+   </html>
