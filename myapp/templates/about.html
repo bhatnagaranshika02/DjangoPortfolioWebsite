@@ -4,15 +4,15 @@
 	<style>
 .square{
 	border: 5px solid green;
-	position: absolute;
 	display: block;
    align-self: center;
 
     text-align: center;
 
-    width: 40vw;
+    width: 60vw;
 
-    height: 20vw;
+    height: 25vw;
+
 }
 
 .mobile-container {
@@ -24,6 +24,132 @@
   border-radius: 10px;
 }
 
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.div1{
+  position: absolute;
+}
+.div2{
+  position: sticky;
+
+}
+.final{
+   width: 100px;
+  height: 100px;
+  transition-property: height;
+  transition-duration: 7s;
+
+}
+
+div:hover {
+  width: 400px;
+}
+
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+
+
+
+
+  }
+
+
+}
+
+.animate{
+  animation: type 2s steps(80);
+  overflow:hidden;
+  white-space: nowrap;
+  font-family: consolas;
+  border-right: 4px solid black;
+  width: 222ch;
+
+}
+@keyframes type{
+  0%{
+    width:0ch;
+  }
+  100%{
+    width: 22ch;
+  }
+}
+.animate2{
+   animation: type 5s steps(20);
+  overflow:hidden;
+  white-space: nowrap;
+  font-family: consolas;
+  border-right: 4px solid white;
+  width: 222ch;
+  color: white;
+
+}
+@keyframes type{
+  0%{
+    width:0ch;
+  }
+  100%{
+    width: 22ch;
+  }
+}
+
+}
+
+.final{
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px;
+}
+
 
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -32,13 +158,66 @@
 
 
 	</style>
+</head>
+<body>
+  <!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">TECHnophile Anshika</a>
+  <div id="myLinks">
+    <a href="About.html">About Me</a>
+    <a href="#contact">
+      <select name="contact">
+        <option value="Facebook">Facebook</option>
+         <option value="GitHUB">GitHub</option>
+          <option value="Linkdin">Linkdin</option>
+      </select> 
 
+    Get in touch</a>
+    <a href="#about">Mail Me</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+ </script>
+   </body>
+   <br><br>
+   <br>
+<body style="background-color: black;">
+  <div class="final">
+	<div class="square">
+      <div class = "div1">
+    <img src="anshi.jpg" width="300" height="250">
+  </div>
+  <div class = "div2">
+    <p class="glow" style="font-size: 100px; font-style: italic; font-family: cursive; text-align: right;">Meet <br>Anshika</p> 
+</div>
+</div>
+  <div class="div3">
+<h1 class="animate" style="align-content: : center;">About me -</h1>
+<p class="animate2">dsf fffdss ddfg ssff ssfg </p>
+<p class="animate2">dhfjf dfjhjg dfjghefjg fghefgn fdbfknbb fkvjfek vhfkdgn</p>
+</div>
 
 </p>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </div>
 </div>
+
+
+</script>
 
 </body>
 
