@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
 .square{
 	border: 5px solid green;
@@ -9,9 +10,9 @@
 
     text-align: center;
 
-    width: 60vw;
+    width: 80vw;
 
-    height: 25vw;
+    height: 35vw;
 
 }
 
@@ -61,6 +62,7 @@
 }
 .div1{
   position: absolute;
+
 }
 .div2{
   position: sticky;
@@ -96,11 +98,9 @@ div:hover {
   
   to {
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+}
 
 
-
-
-  }
 
 
 }
@@ -149,12 +149,127 @@ div:hover {
   padding: 10px;
   height: 300px;
 }
+<style>
+* {
+  box-sizing: border-box;
+}
 
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.text {
+  position: absolute;
+  width: 450px;
+  left: 50%;
+  margin-left: -225px;
+  height: 40px;
+  top: 50%;
+  margin-top: -20px;
+}
+
+p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  font-size: 25px;
+  color: white;
+
+}
+
+.word {
+  position: absolute;
+  width: 220px;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+  color: #8e44ad;
+}
+
+.belize {
+  color: #2980b9;
+}
+
+.pomegranate {
+  color: #c0392b;
+}
+
+.green {
+  color: #16a085;
+}
+
+.midnight {
+  color: #2c3e50;
+}
+
+.vein{
+  width: 900px;
+  height: 450px;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.vein2{
+  width: 900px;
+  height: 450px;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+  
+}
+  
+}
 
 
 	</style>
@@ -181,6 +296,10 @@ div:hover {
 </div>
 
 </div>
+<br>
+<a href="home.html">
+<button type="button" class="btn btn-success" style="float: left;">Go To Home</button>
+</a>+
 
 <script>
 function myFunction() {
@@ -199,26 +318,120 @@ function myFunction() {
   <div class="final">
 	<div class="square">
       <div class = "div1">
-    <img src="anshi.jpg" width="300" height="250">
+    <img src="anshika.png" width="350" height="350" style="border-radius: 20px; border-style: dotted; border-color: silver;" >
   </div>
-  <div class = "div2">
-    <p class="glow" style="font-size: 100px; font-style: italic; font-family: cursive; text-align: right;">Meet <br>Anshika</p> 
-</div>
-</div>
-  <div class="div3">
-<h1 class="animate" style="align-content: : center;">About me -</h1>
-<p class="animate2">dsf fffdss ddfg ssff ssfg </p>
-<p class="animate2">dhfjf dfjhjg dfjghefjg fghefgn fdbfknbb fkvjfek vhfkdgn</p>
-</div>
+  
 
-</p>
+<div class="text">
+  <h style="font-size: 60px; color: red; font-family: fantasy; text-align: left; text-shadow: 2.5px 2.5px">Meet Anshika ...</h>
+  <br><br>
+  <p >She is a :- </p>
+  <p>
+    <span class="word wisteria">PythonDeveloper.</span>
+    <span class="word belize">MLExpert.</span>
+    <span class="word pomegranate">DataScientist.</span>
+    <span class="word green">FlutterDeveloper.</span>
+    <span class="word midnight">JuliaDeveloper.</span>
+  </p>
+  <br><br>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> </script>
+</body>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Column 1</h2>
+    <p style="color: black; letter-spacing: 0.5px; word-spacing: 1.5px;">I am Anshika Bhatnagar. <br>I love to do comeptitive programming.<br>I am a full stack python developer and love to work on Machine Learning , Data science and Artificial Intelligence. bla bla bla<br> jdfdsjfbsjbdjvb<br>jscsabasfb</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>My Acheivements</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2>Certifications and Trainings.</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="vein">
+    <br><br><br><br>
+   <center><img src="we.png" class="vein"></center>
+   <br>
+   <br><br>
+   <img src="we(3).png" class="vein2">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-</div>
-</div>
+<script>
+  var words = document.getElementsByClassName('word');
+var wordArray = [];
+var currentWord = 0;
 
+words[currentWord].style.opacity = 1;
+for (var i = 0; i < words.length; i++) {
+  splitLetters(words[i]);
+}
 
+function changeWord() {
+  var cw = wordArray[currentWord];
+  var nw = currentWord == words.length-1 ? wordArray[0] : wordArray[currentWord+1];
+  for (var i = 0; i < cw.length; i++) {
+    animateLetterOut(cw, i);
+  }
+  
+  for (var i = 0; i < nw.length; i++) {
+    nw[i].className = 'letter behind';
+    nw[0].parentElement.style.opacity = 1;
+    animateLetterIn(nw, i);
+  }
+  
+  currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
+}
+
+function animateLetterOut(cw, i) {
+  setTimeout(function() {
+    cw[i].className = 'letter out';
+  }, i*80);
+}
+
+function animateLetterIn(nw, i) {
+  setTimeout(function() {
+    nw[i].className = 'letter in';
+  }, 340+(i*80));
+}
+
+function splitLetters(word) {
+  var content = word.innerHTML;
+  word.innerHTML = '';
+  var letters = [];
+  for (var i = 0; i < content.length; i++) {
+    var letter = document.createElement('span');
+    letter.className = 'letter';
+    letter.innerHTML = content.charAt(i);
+    word.appendChild(letter);
+    letters.push(letter);
+  }
+  
+  wordArray.push(letters);
+}
+
+changeWord();
+setInterval(changeWord, 4000);
 </script>
 
-</body>
+
+<main role="main">
+        <div class="jumbotron">
+          <div class="col-sm-8 mx-auto">
+            <h1>Navbar examples</h1>
+            <p>This example is a quick exercise to illustrate how the navbar and its contents work. Some navbars extend the width of the viewport, others are confined within a <code>.container</code>. For positioning of navbars, checkout the <a href="../navbar-top/">top</a> and <a href="../navbar-top-fixed/">fixed top</a> examples.</p>
+            <p>At the smallest breakpoint, the collapse plugin is used to hide the links and show a menu button to toggle the collapsed content.</p>
+            <p>
+              <a class="btn btn-primary" href="../../components/navbar/" role="button">View navbar docs &raquo;</a>
+            </p>
+          </div>
+        </div>
+      </main>
 
 </html>
