@@ -3,7 +3,28 @@
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
+  </style>
 
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+
+
+</style>
+</head>
+
+<style >
 
 .mobile-container {
   max-width: 480px;
@@ -415,12 +436,77 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg?color=00FB
 }
 
 
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 60px;
+   background-color: red;
+   color: white;
+   text-align: center;
+   }
+   .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 15px;
+  height: 15px;
+  text-align: right;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.6;
+}
+   .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: pink;
+  color: white;
+}
+.fa-github{
+  background:black;
+  color:white;
+}
+.text-foot{
+  text-align: left;
+}
+.split{
+  width: 50%;
+  position: fixed;
+  overflow-x: hidden;
+  height: 100%;
+
+}
+.left{
+  left:0;
+
+}
+.right{
+  right: 0;
+}
+.content{
+  font-size: 14;
+  font-style: Ariel;
+}
+
 
 </style>
 </head>
 <body>
-
-
   <!--Navbar -->
 <div class="nav">
 <nav class="mb-1 navbar navbar-expand-lg navbar-dark orange lighten-1">
@@ -438,6 +524,7 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg?color=00FB
       </li>
       <li class="nav-item">
         <a class="nav-link" href="about.html">About me</a>
+         <span class="sr-only">(current)</span>
       </li>
 
       <li class="nav-item">
