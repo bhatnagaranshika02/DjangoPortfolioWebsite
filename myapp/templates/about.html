@@ -2,510 +2,493 @@
 <html>
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<style>
-  </style>
 
-<head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1" /> 
    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
-
-
-</style>
-</head>
-
-<style >
-
-.mobile-container {
-  max-width: 480px;
-  margin: auto;
-  background-color: #555;
-  height: 500px;
-  color: white;
-  border-radius: 10px;
-}
-
-.topnav {
-  overflow: hidden;45*
-  background-color: #333;
-  position: relative;
-}
-
-.topnav #myLinks {
-  display: none;
-}
-
-.topnav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-.topnav a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.active {
-  background-color: #4CAF50;
-  color: white;
-}
-.div1{
-  position: absolute;
-
-}
-.div2{
-  position: sticky;
-
-}
-
-
-div:hover {
-  width: 400px;
-}
-
-
-.glow {
-  font-size: 80px;  
-  text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
-  
-}
-
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-}
-
-
-
-
-}
-
-.animate{
-  animation: type 2s steps(80);
-  overflow:hidden;
-  white-space: nowrap;
-  font-family: consolas;
-  border-right: 4px solid black;
-  width: 222ch;
-
-}
-@keyframes type{
-  0%{
-    width:0ch;
-  }
-  100%{
-    width: 22ch;
-  }
-}
-.animate2{
-   animation: type 5s steps(20);
-  overflow:hidden;
-  white-space: nowrap;
-  font-family: consolas;
-  border-right: 4px solid white;
-  width: 222ch;
-  color: white;
-
-}
-@keyframes type{
-  0%{
-    width:0ch;
-  }
-  100%{
-    width: 22ch;
-  }
-}
-
-}
-
-.final{
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-  height: 300px;
-}
-<style>
-* {
-  box-sizing: border-box;
-}
-
-/* Create three equal columns that floats next to each other */
-.column1{
-  float: left;
-  width: 33%;
-  padding: 25px;
-  height: 600px; /* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 40px;
-}
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
 
-.text {
-  position: absolute;
-  width: 450px;
-  left: 50%;
-  margin-left: -225px;
-  height: 40px;
-  top: 50%;
-  margin-top: -20px;
-}
+  <style >
 
-p {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0;
-  font-size: 25px;
-  color: white;
+    .mobile-container {
+      max-width: 480px;
+      margin: auto;
+      background-color: #555;
+      height: 500px;
+      color: white;
+      border-radius: 10px;
+    }
 
-}
+    .topnav {
+      overflow: hidden;45*
+      background-color: #333;
+      position: relative;
+    }
 
-.word {
-  position: absolute;
-  width: 220px;
-  opacity: 0;
-}
+    .topnav #myLinks {
+      display: none;
+    }
 
-.letter {
-  display: inline-block;
-  position: relative;
-  float: left;
-  transform: translateZ(25px);
-  transform-origin: 50% 50% 25px;
-}
+    .topnav a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+    }
 
-.letter.out {
-  transform: rotateX(90deg);
-  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
+    .topnav a.icon {
+      background: black;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
 
-.letter.behind {
-  transform: rotateX(-90deg);
-}
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
 
-.letter.in {
-  transform: rotateX(0deg);
-  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
+    .active {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .div1{
+      position: absolute;
 
-.wisteria {
-  color: #8e44ad;
-}
+    }
+    .div2{
+      position: sticky;
 
-.belize {
-  color: #2980b9;
-}
+    }
 
-.pomegranate {
-  color: #c0392b;
-}
 
-.green {
-  color: #16a085;
-}
+    
 
-.midnight {
-  color: #2c3e50;
-}
 
-.vein{
-  width: 900px;
-  height: 400px;
-  align-content: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  
-}
-.vein2{
-  width: 900px;
-  height: 450px;
-  align-content: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50px;
-  
-}
-  
-}
+    .glow {
+      font-size: 80px;  
+      text-align: center;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;
+      
+    }
 
-.div2 {
-  width: 500px;
-  height: 500px;  
-  padding: 50px;
-  border: 5px solid red;
-}
+    @-webkit-keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+      }
+      
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
 
-	</style>
-  <style>
-* {
+    }
+
+    .animate{
+      animation: type 2s steps(80);
+      overflow:hidden;
+      white-space: nowrap;
+      font-family: consolas;
+      border-right: 4px solid black;
+      width: 222ch;
+
+    }
+    @keyframes type{
+      0%{
+        width:0ch;
+      }
+      100%{
+        width: 22ch;
+      }
+    }
+    .animate2{
+       animation: type 5s steps(20);
+      overflow:hidden;
+      white-space: nowrap;
+      font-family: consolas;
+      border-right: 4px solid white;
+      width: 222ch;
+      color: white;
+
+    }
+    @keyframes type{
+      0%{
+        width:0ch;
+      }
+      100%{
+        width: 22ch;
+      }
+    }
+
+    }
+
+    .final{
+      float: left;
+      width: 33.33%;
+      padding: 10px;
+      height: 300px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Create three equal columns that floats next to each other */
+    .column1{
+      float: left;
+      width: 33%;
+      padding: 25px;
+      height: 600px; /* Should be removed. Only for demonstration */
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 40px;
+    }
+
+    .text {
+      position: absolute;
+      width: 450px;
+      left: 50%;
+      margin-left: -225px;
+      height: 40px;
+      top: 50%;
+      margin-top: -20px;
+    }
+
+    p {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0;
+      font-size: 25px;
+      color: white;
+
+    }
+
+    .word {
+      position: absolute;
+      width: 220px;
+      opacity: 0;
+    }
+
+    .letter {
+      display: inline-block;
+      position: relative;
+      float: left;
+      transform: translateZ(25px);
+      transform-origin: 50% 50% 25px;
+    }
+
+    .letter.out {
+      transform: rotateX(90deg);
+      transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    .letter.behind {
+      transform: rotateX(-90deg);
+    }
+
+    .letter.in {
+      transform: rotateX(0deg);
+      transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .wisteria {
+      color: #8e44ad;
+    }
+
+    .belize {
+      color: #2980b9;
+    }
+
+    .pomegranate {
+      color: #c0392b;
+    }
+
+    .green {
+      color: #16a085;
+    }
+
+    .midnight {
+      color: #2c3e50;
+    }
+
+    .vein{
+      width: 900px;
+      height: 400px;
+      align-content: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      
+    }
+    .vein2{
+      width: 900px;
+      height: 450px;
+      align-content: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 50px;
+      
+    }
+      
+    }
+
+    .div2 {
+      width: 500px;
+      height: 500px;  
+      padding: 50px;
+      border: 5px solid red;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Create two equal columns that floats next to each other */
+    .column {
+
+      float: left;
+      width: 40%;
+      height: 500px;
+      padding: 25px;
+      border: "thick solid #0000FF";
+
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    /* Style the buttons */
+    .btn {
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      background-color: #f1f1f1;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #ddd;
+    }
+
+    .btn.active {
+      background-color: #666;
+      color: white;
+    }
+
+    * {
   box-sizing: border-box;
-}
+    }
 
-/* Create two equal columns that floats next to each other */
-.column {
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-  float: left;
-  width: 40%;
-  height: 500px;
-  padding: 25px;
-  border: "thick solid #0000FF";
+    /* Float four columns side by side */
+    .column1 {
+      float: left;
+      width: 50%;
+      padding: 20px;
+    }
 
-}
+    /* Remove extra left and right margins, due to padding */
+    .row {margin: 0 -5px;}
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-}
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
 
-.btn:hover {
-  background-color: #ddd;
-}
+    /* Responsive columns */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
 
-.btn.active {
-  background-color: #666;
-  color: white;
-}
+    /* Style the counter cards */
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      text-align: center;
+      background-color: #f1f1f1;
+    }
 
-<style>
-* {
-  box-sizing: border-box;
-}
+    * {
+    box-sizing: border-box;
+    }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-/* Float four columns side by side */
-.column1 {
-  float: left;
-  width: 50%;
-  padding: 20px;
-}
+    /* Float four columns side by side */
+    .column {
+      float: left;
+      width: 25%;
+      padding: 0 10px;
+      text-align: left;
+    }
 
-/* Remove extra left and right margins, due to padding */
-.row {margin: 0 -5px;}
+    /* Remove extra left and right margins, due to padding */
+    .row {margin: 0 -5px;}
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
 
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
+    /* Responsive columns */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
 
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
-}
-</style>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-  text-align: left;
-}
-
-/* Remove extra left and right margins, due to padding */
-.row {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
-}
+    /* Style the counter cards */
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      text-align: center;
+      background-color: #f1f1f1;
+    }
 
 
+    .navbar.navbar-9 .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg?color=00FBD8');
+    }
+    .bg-company-red {
+        background-color: lightblue !important;
+    }
+    .navbar-default {
+      background: #000000;
+    }
+    .nav{
+      background-color: orange;
+    }
+    .picci{
+      float: right;
+    }
 
-.navbar.navbar-9 .navbar-toggler-icon {
-background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg?color=00FBD8');
-}
-.bg-company-red {
-    background-color: lightblue !important;
-}
-.navbar-default {
-  background: #000000;
-}
-.nav{
-  background-color: orange;
-}
-.picci{
-  float: right;
-}
-
-.active {
-  background-color: #4CAF50;
-  color: white;
-}
-.bodyy{
-  background-image: url("tech2.gif");
-}
+    .active {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .bodyy{
+      background-image: url("tech2.gif");
+    }
 
 
-.active {
-  background-color: #4CAF50;
-  color: white;
-}
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   height: 60px;
-   background-color: red;
-   color: white;
-   text-align: center;
-   }
-   .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 15px;
-  height: 15px;
-  text-align: right;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
+    .active {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .footer {
+       position: fixed;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       height: 60px;
+       background-color: red;
+       color: white;
+       text-align: center;
+       }
+       .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 15px;
+      height: 15px;
+      text-align: right;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 50%;
+    }
 
-.fa:hover {
-    opacity: 0.6;
-}
-   .fa-facebook {
-  background: #3B5998;
-  color: white;
-}
+    .fa:hover {
+        opacity: 0.6;
+    }
+       .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
 
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-.fa-instagram {
-  background: pink;
-  color: white;
-}
-.fa-github{
-  background:black;
-  color:white;
-}
-.text-foot{
-  text-align: left;
-}
-.split{
-  width: 50%;
-  position: fixed;
-  overflow-x: hidden;
-  height: 100%;
+    .fa-linkedin {
+      background: #007bb5;
+      color: white;
+    }
+    .fa-instagram {
+      background: pink;
+      color: white;
+    }
+    .fa-github{
+      background:black;
+      color:white;
+    }
+    .text-foot{
+      text-align: left;
+    }
+    .split{
+      width: 50%;
+      position: fixed;
+      overflow-x: hidden;
+      height: 100%;
 
-}
-.left{
-  left:0;
+    }
+    .left{
+      left:0;
 
-}
-.right{
-  right: 0;
-}
-.content{
-  font-size: 14;
-  font-style: Ariel;
-}
-
+    }
+    .right{
+      right: 0;
+    }
+    .content{
+      font-size: 14;
+      font-style: Ariel;
+    }
 
 </style>
 </head>
+
 <body>
   <!--Navbar -->
 <div class="nav">
@@ -517,18 +500,19 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg?color=00FB
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="home.html">My Projects
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
       <li class="nav-item">
-        <a class="nav-link" href="about.html">About me</a>
+        <a class="nav-link" href="myprojects2.html">My projects</a>
          <span class="sr-only">(current)</span>
       </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="about.html.html">About me
+          
+        </a>
+      </li>
+      
 
       <li class="nav-item">
-        <a class="nav-link" href="#">Blogs</a>
+        <a class="nav-link" href="blogs.html">Blogs</a>
       </li>
        <li class="nav-item">
         <a class="nav-link" href="home.html">Home</a>
@@ -556,7 +540,7 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg?color=00FB
    <br>
 <body style="background-color: black;">
   <div class="final">
-	
+  
       <div class = "div1">
     <img src="anshika.png" width="350" height="350" style="border-radius: 20px; border-style: dotted; border-color: silver;" >
   </div>
@@ -586,13 +570,7 @@ background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg?color=00FB
 </div> </script>
 </body>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
+
 
 <body>
   <br><br><br><br><br><br><br><br><br>
@@ -855,6 +833,74 @@ changeWord();
 setInterval(changeWord, 4000);
 </script>
 <br><br><br>
+<style>
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 60px;
+   background-color: red;
+   color: white;
+   text-align: center;
+   }
+   .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 15px;
+  height: 15px;
+  text-align: right;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.6;
+}
+   .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: pink;
+  color: white;
+}
+.fa-github{
+  background:black;
+  color:white;
+}
+.text-foot{
+  text-align: left;
+}
+.split{
+  width: 50%;
+  position: fixed;
+  overflow-x: hidden;
+  height: 100%;
+
+}
+.left{
+  left:0;
+
+}
+.right{
+  right: 0;
+}
+.content{
+  font-size: 14;
+  font-style: Ariel;
+}
+</style>
 <body>
   <div class="footer">
 
